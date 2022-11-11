@@ -75,7 +75,7 @@ stages:
     # Read more here: https://docs.microsoft.com/en-us/azure/devops/pipelines/tasks/deploy/azure-cli?view=azure-devops)
     - task: AzureCLI@2
       inputs:
-        azureSubscription: '<Name of the Azure Resource Manager service connection>'
+        azureSubscription: 'arm_connection'
         scriptType: 'pscore'
         scriptLocation: 'scriptPath'
         # Security Gate powershell script in same folder
