@@ -28,7 +28,7 @@ variables:
   vmImageName: 'ubuntu-latest'
 
 stages:
-- stage: Build and Publish
+- stage: Build_and_Publish
   displayName: Build and push image to registry than check for vulnerability scan results to determine publishing health
   jobs:
   # Build Image and push it to on-boarded to ASC ACR registry
