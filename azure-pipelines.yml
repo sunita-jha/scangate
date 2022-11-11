@@ -18,7 +18,7 @@ variables:
   # Container registry service connection established during pipeline creation
   # Read more here: https://docs.microsoft.com/en-us/azure/devops/pipelines/library/service-endpoints?view=azure-devops&tabs=yaml#create-a-service-connection
   dockerRegistryServiceConnection: 'acr_registry'
-  imageRepository: 'imagescan'
+  imageRepository: 'imagescan1'
   containerRegistry: 'myregistrydemo1'
   dockerfilePath: '$(Build.SourcesDirectory)/Dockerfile'
   tag: '$(Build.BuildId)'
