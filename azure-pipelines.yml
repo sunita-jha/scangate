@@ -75,7 +75,7 @@ stages:
     # Read more here: https://docs.microsoft.com/en-us/azure/devops/pipelines/tasks/deploy/azure-cli?view=azure-devops)
     - task: AzureCLI@2
       inputs:
-        azureSubscription: 'arm_connection'
+        azureSubscription: 'Free Trial (7efefb00-e17c-4d85-a4ce-d13264a86786)'
         scriptType: 'pscore'
         scriptLocation: 'scriptPath'
         # Security Gate powershell script in same folder
