@@ -8,6 +8,6 @@ runs:
   # Defining the action steps(Just one step to be simple)
   steps:
   - name: Build the Docker image
-    uses: somelibrary/deploy@master
+    #uses: somelibrary/deploy@master
     run: docker build . --file Dockerfile --tag my-image-name:$(date +%s)
 
