@@ -1,16 +1,13 @@
 name: Docker Image CI
 
 # Were we can define the inputs that our action will accept
-inputs:
-  tag:
-    required: true
 
 runs:
   using: "composite"
   # Defining the action steps(Just one step to be simple)
   steps:
   - name: Build the Docker image
-    uses: sunita-jha/scangate@main
-    with:
-     tag: ${{inputs.tag}}
+    #uses: sunita-jha/scangate@main
+    run: docker build . --file Dockerfile --tag my-image-name:$(date +%s)
+
 
