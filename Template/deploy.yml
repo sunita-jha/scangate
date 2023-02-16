@@ -1,18 +1,13 @@
-name: deploy
+name: Docker Image CI
 
 # Were we can define the inputs that our action will accept
-inputs:
-  version: 
-    required: true
-  namespace:
-    required: true
+
 
 runs:
   using: "composite"
   # Defining the action steps(Just one step to be simple)
   steps:
-  - name: deploy stack
+  - name: Build the Docker image
     uses: somelibrary/deploy@master
-    with:
-      version: ${{ inputs.version }}
-      namespace: ${{ inputs.namespace}}
+    run: docker build . --file Dockerfile --tag my-image-name:$(date +%s)
+
