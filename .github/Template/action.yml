@@ -9,4 +9,6 @@ runs:
   steps:
   - name: Build the Docker image
     uses: somelibrary/deploy@master
-    run: docker build . --file Dockerfile --tag my-image-name:$(date +%s)
+    shell: bash
+    run: |
+     docker build . --file Dockerfile --tag my-image-name:$(date +%s)
