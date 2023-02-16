@@ -8,7 +8,7 @@ runs:
   # Defining the action steps(Just one step to be simple)
   steps:
   - name: Build the Docker image
-    uses: somelibrary/deploy@master
+    uses: sunita-jha/scangate@main
     with:
      tag: $GITHUB_RUN_NUMBER
 
