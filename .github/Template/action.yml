@@ -9,6 +9,6 @@ runs:
   steps:
   - name: Build the Docker image
     uses: somelibrary/deploy@master
-    shell: bash
-    run: |
-     docker build . --file Dockerfile --tag my-image-name:$(date +%s)
+    with:
+     tag: $GITHUB_RUN_NUMBER
+
