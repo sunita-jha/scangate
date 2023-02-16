@@ -18,5 +18,5 @@ jobs:
       with:
           ref: ${{ github.event.workflow_run.head_branch }}
     - name: Build the Docker image
-      uses: "./.github/Template/action.yml"
+      uses: "./.github/Template"
 
