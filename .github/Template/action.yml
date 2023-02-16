@@ -8,6 +8,7 @@ runs:
   steps:
   - name: Build the Docker image
     #uses: sunita-jha/scangate@main
+    shell: bash
     run: docker build . --file Dockerfile --tag my-image-name:$(date +%s)
 
 
